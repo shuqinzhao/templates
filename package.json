@@ -1,7 +1,7 @@
 {
-  "name": "webpacksimplereact",
+  "name": "~~name~~",
   "version": "0.0.1",
-  "description": "webpack simple",
+  "description": "~~description~~",
   "main": "webpack.config.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
@@ -14,13 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "zhaoyingya@126.com"
+    "url": "~~gitUrl~~"
   },
   "keywords": [
     "react",
     "webpack"
   ],
-  "author": "zhaoying",
+  "author": "~~author~~",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -37,6 +37,7 @@
     "compression-webpack-plugin": "^1.1.3",
     "copy-webpack-plugin": "^4.5.3",
     "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^3.2.0",
     "koa": "^2.5.3",
@@ -47,17 +48,21 @@
     "mockjs": "^1.0.1-beta3",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.0",
+    "postcss-loader": "^3.0.0",
     "precss": "^3.1.2",
+    "style-loader": "^0.23.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
     "history": "^4.7.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-hot-loader": "^3.1.3",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-router-redux": "^4.0.8",
     "redux": "^4.0.1"
   }
