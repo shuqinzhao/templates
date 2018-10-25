@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 class Dashboard extends Component {
   static propTypes = {
@@ -14,4 +15,12 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+const mapStateToProps = (state, ownProps) => {
+  const { layout: { showLoading } } = state;
+
+  return {
+    showLoading,
+  }
+}
+
+export default connect(mapStateToProps)(Dashboard);
