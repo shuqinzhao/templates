@@ -290,6 +290,14 @@ const getConfig = (conf) => {
           })(),
         },
         {
+          test: /\.scss$/,
+          use: [
+            "style-loader",
+            "css-loader",
+            "sass-loader"
+          ]
+        },
+        {
           test: /\.module\.css$/,
           include: sourcePath,
           use: (() => {
